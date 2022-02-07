@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<Enum uuid="e67697d2-ca01-458e-8c08-ec51d3cb8099">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СпособыУстановкиКурсаВалюты" category="Ref">
+				<xr:TypeId>7cbf08b2-9a96-47ae-ae45-5b17a83d9bc8</xr:TypeId>
+				<xr:ValueId>2e27112d-3715-4ff2-acc4-bd86fee43480</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СпособыУстановкиКурсаВалюты" category="Manager">
+				<xr:TypeId>9457ea2e-e423-4fe0-9163-48e8204aeaa1</xr:TypeId>
+				<xr:ValueId>7b229bb3-76f9-4e2a-afe7-e3a01cf5a869</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СпособыУстановкиКурсаВалюты" category="List">
+				<xr:TypeId>416e22aa-f8ae-49d6-9ce1-5d4d654177b2</xr:TypeId>
+				<xr:ValueId>3fbd85b6-2e2e-4949-806f-c3dc1757c531</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СпособыУстановкиКурсаВалюты</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>ec11342f-594f-416f-a10f-bd1bfa695c08</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="2a658b54-e337-4043-91c7-5d82d01ebb1a">
+				<InternalInfo/>
+				<Properties>
+					<Name>НаценкаНаКурсДругойВалюты</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>c9ab3890-6d16-431f-ab2b-b5058e6202a4</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="addd7ae0-5541-450e-9733-3d26ef742578">
+				<InternalInfo/>
+				<Properties>
+					<Name>РучнойВвод</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>74f03c35-5da0-406e-a938-e8e5d49975ef</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="453a399c-55df-4df4-ad04-49bfb1e6f272">
+				<InternalInfo/>
+				<Properties>
+					<Name>ЗагрузкаИзИнтернета</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>31c3ac44-204e-43fd-bca3-fd18fa091c58</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ed5e8ceb-1ba2-4646-a4bb-fe9b2d0e4f50">
+				<InternalInfo/>
+				<Properties>
+					<Name>РасчетПоФормуле</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>5ee9eed7-3c6c-4264-ab9a-6f24f9c80598</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

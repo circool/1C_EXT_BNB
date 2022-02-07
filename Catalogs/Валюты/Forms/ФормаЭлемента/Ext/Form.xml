@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<CommandBarLocation>Top</CommandBarLocation>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen" callType="Before">БНБ_ПриОткрытииПеред</Event>
+		<Event name="BeforeWriteAtServer" callType="Before">БНБ_ПередЗаписьюНаСервереПеред</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="НаименованиеПолное" id="4">
+			<DataPath>1000001/0:566c74c2-1a1b-488a-8d00-eae8d7f62753</DataPath>
+			<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Wrap>false</Wrap>
+			<BorderColor>style:BorderColor</BorderColor>
+			<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="НаименованиеПолноеExtendedTooltip" id="72"/>
+		</InputField>
+		<UsualGroup name="ГруппаКодНаименование" id="148">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код и наименование</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="149"/>
+			<ChildItems>
+				<InputField name="Код" id="2">
+					<DataPath>Объект.Code</DataPath>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Width>3</Width>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="КодКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="75"/>
+				</InputField>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+					<Width>5</Width>
+					<Wrap>false</Wrap>
+					<BorderColor>style:BorderColor</BorderColor>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="76"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаХарактеристикиБНБ" id="153">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа характеристики БНБ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа характеристики БНБ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаХарактеристикиБНБРасширеннаяПодсказка" id="154"/>
+			<ChildItems>
+				<CheckBoxField name="БНБ_ВалютаКотируетсяКЛеву" id="150">
+					<DataPath>Объект.БНБ_КотироватьКБолгарскомуЛеву</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта котируется к Леву</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Если отмечен этот флажек, то для валюты допускается загрузка курсов по отношению к болгарскому леву</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="БНБ_ВалютаКотируетсяКЛевуКонтекстноеМеню" id="151"/>
+					<ExtendedTooltip name="БНБ_ВалютаКотируетсяКЛевуРасширеннаяПодсказка" id="152"/>
+					<Events>
+						<Event name="OnChange" callType="Before">БНБ_ВалютаКотируетсяКЛевуПриИзмененииПеред</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСпособУстановкиКурса" id="106">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ установки курса</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСпособУстановкиКурсаРасширеннаяПодсказка" id="107"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьКурсВалюты" id="142">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Курс валюты:</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьКурсВалютыКонтекстноеМеню" id="143"/>
+					<ExtendedTooltip name="НадписьКурсВалютыРасширеннаяПодсказка" id="144"/>
+				</LabelDecoration>
+				<RadioButtonField name="КурсВалютыВводитсяВручную" id="101">
+					<DataPath>1000001/0:a620b26b-d007-4f9a-9044-65b64deb4771</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ColumnsCount>1</ColumnsCount>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>вводится вручную</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СпособыУстановкиКурсаВалюты.EnumValue.РучнойВвод</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="КурсВалютыВводитсяВручнуюКонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="КурсВалютыВводитсяВручнуюРасширеннаяПодсказка" id="103"/>
+				</RadioButtonField>
+				<RadioButtonField name="КурсВалютыЗагружаетсяИзИнтернета" id="129">
+					<DataPath>1000001/0:a620b26b-d007-4f9a-9044-65b64deb4771</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Auto</RadioButtonType>
+					<ColumnsCount>1</ColumnsCount>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>загружается из Интернета</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СпособыУстановкиКурсаВалюты.EnumValue.ЗагрузкаИзИнтернета</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="КурсВалютыЗагружаетсяИзИнтернетаКонтекстноеМеню" id="130"/>
+					<ExtendedTooltip name="КурсВалютыЗагружаетсяИзИнтернетаРасширеннаяПодсказка" id="131"/>
+				</RadioButtonField>
+				<UsualGroup name="ГруппаКурсСвязанСДругойВалютой" id="138">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Курс связан с другой валютой</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКурсСвязанСДругойВалютойРасширеннаяПодсказка" id="139"/>
+					<ChildItems>
+						<RadioButtonField name="КурсВалютыСвязанСКурсомДругойВалюты" id="132">
+							<DataPath>1000001/0:a620b26b-d007-4f9a-9044-65b64deb4771</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ColumnsCount>1</ColumnsCount>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>связан с курсом другой валюты:</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.СпособыУстановкиКурсаВалюты.EnumValue.НаценкаНаКурсДругойВалюты</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="КурсВалютыСвязанСКурсомДругойВалютыКонтекстноеМеню" id="133"/>
+							<ExtendedTooltip name="КурсВалютыСвязанСКурсомДругойВалютыРасширеннаяПодсказка" id="134"/>
+						</RadioButtonField>
+						<UsualGroup name="ГруппаНаценкаНаКурсДругойВалюты" id="119">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наценка на курс другой валюты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Коэффициент, который применяется к курсу основной валюты для вычисления курса текущей валюты.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНаценкаНаКурсДругойВалютыРасширеннаяПодсказка" id="120"/>
+							<ChildItems>
+								<InputField name="ОсновнаяВалюта" id="5">
+									<DataPath>1000001/0:ca0152e1-40cf-480b-af2f-f1bc43b86e3f</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Width>15</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Wrap>false</Wrap>
+									<ChooseType>false</ChooseType>
+									<TypeDomainEnabled>false</TypeDomainEnabled>
+									<AvailableTypes>
+										<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+									</AvailableTypes>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+									<ContextMenu name="ОсновнаяВалютаКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ОсновнаяВалютаExtendedTooltip" id="81"/>
+								</InputField>
+								<InputField name="Наценка" id="6">
+									<DataPath>1000001/0:09e4439d-fb20-4cc0-8d72-f9761d356932</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Коэффициент, применяемый к курсу выбранной валюты для вычисления курса текущей валюты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+									<Width>7</Width>
+									<Wrap>false</Wrap>
+									<ChoiceButton>false</ChoiceButton>
+									<SpinButton>true</SpinButton>
+									<MinValue xsi:type="xs:decimal">-99</MinValue>
+									<MaxValue xsi:type="xs:decimal">100</MaxValue>
+									<BorderColor>style:BorderColor</BorderColor>
+									<ContextMenu name="НаценкаКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="НаценкаExtendedTooltip" id="82"/>
+								</InputField>
+								<LabelDecoration name="ТекстПроцент" id="126">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>%</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ТекстПроцентКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="ТекстПроцентРасширеннаяПодсказка" id="128"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКурсРассчитываетсяПоФормуле" id="140">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Курс рассчитывается по формуле</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКурсРассчитываетсяПоФормулеРасширеннаяПодсказка" id="141"/>
+					<ChildItems>
+						<RadioButtonField name="КурсВалютыРассчитываетсяПоФормуле" id="135">
+							<DataPath>1000001/0:a620b26b-d007-4f9a-9044-65b64deb4771</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ColumnsCount>1</ColumnsCount>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>рассчитывается по формуле:</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.СпособыУстановкиКурсаВалюты.EnumValue.РасчетПоФормуле</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="КурсВалютыРассчитываетсяПоФормулеКонтекстноеМеню" id="136"/>
+							<ExtendedTooltip name="КурсВалютыРассчитываетсяПоФормулеРасширеннаяПодсказка" id="137"/>
+						</RadioButtonField>
+						<InputField name="ФормулаРасчетаКурса" id="121">
+							<DataPath>1000001/0:ca609d5e-0a56-42ba-b9c1-74d079b066fd</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<Width>32</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ФормулаРасчетаКурсаКонтекстноеМеню" id="122"/>
+							<ExtendedTooltip name="ФормулаРасчетаКурсаРасширеннаяПодсказка" id="123"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="ПараметрыПрописиВалюты" id="145">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры прописи валюты</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="ПараметрыПрописиВалютыКонтекстноеМеню" id="146"/>
+			<ExtendedTooltip name="ПараметрыПрописиВалютыРасширеннаяПодсказка" id="147"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1000001">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Валюты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<BaseForm version="2.13">
+		<CommandBarLocation>Top</CommandBarLocation>
+		<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+		<ChildItems>
+			<InputField name="НаименованиеПолное" id="4">
+				<DataPath>1000001/0:566c74c2-1a1b-488a-8d00-eae8d7f62753</DataPath>
+				<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+				<HorizontalStretch>true</HorizontalStretch>
+				<Wrap>false</Wrap>
+				<BorderColor>style:BorderColor</BorderColor>
+				<ContextMenu name="НаименованиеПолноеКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="НаименованиеПолноеExtendedTooltip" id="72"/>
+			</InputField>
+			<UsualGroup name="ГруппаКодНаименование" id="148">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа код и наименование</v8:content>
+					</v8:item>
+				</Title>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="149"/>
+				<ChildItems>
+					<InputField name="Код" id="2">
+						<DataPath>Объект.Code</DataPath>
+						<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+						<Width>3</Width>
+						<Wrap>false</Wrap>
+						<BorderColor>style:BorderColor</BorderColor>
+						<ContextMenu name="КодКонтекстноеМеню" id="24"/>
+						<ExtendedTooltip name="КодExtendedTooltip" id="75"/>
+					</InputField>
+					<InputField name="Наименование" id="3">
+						<DataPath>Объект.Description</DataPath>
+						<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+						<Width>5</Width>
+						<Wrap>false</Wrap>
+						<BorderColor>style:BorderColor</BorderColor>
+						<ContextMenu name="НаименованиеКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="НаименованиеExtendedTooltip" id="76"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаСпособУстановкиКурса" id="106">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Способ установки курса</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Vertical</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаСпособУстановкиКурсаРасширеннаяПодсказка" id="107"/>
+				<ChildItems>
+					<LabelDecoration name="НадписьКурсВалюты" id="142">
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Курс валюты:</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="НадписьКурсВалютыКонтекстноеМеню" id="143"/>
+						<ExtendedTooltip name="НадписьКурсВалютыРасширеннаяПодсказка" id="144"/>
+					</LabelDecoration>
+					<RadioButtonField name="КурсВалютыВводитсяВручную" id="101">
+						<DataPath>1000001/0:a620b26b-d007-4f9a-9044-65b64deb4771</DataPath>
+						<TitleLocation>None</TitleLocation>
+						<RadioButtonType>Auto</RadioButtonType>
+						<ColumnsCount>1</ColumnsCount>
+						<ChoiceList>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>вводится вручную</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xr:DesignTimeRef">Enum.СпособыУстановкиКурсаВалюты.EnumValue.РучнойВвод</Value>
+								</xr:Value>
+							</xr:Item>
+						</ChoiceList>
+						<ContextMenu name="КурсВалютыВводитсяВручнуюКонтекстноеМеню" id="102"/>
+						<ExtendedTooltip name="КурсВалютыВводитсяВручнуюРасширеннаяПодсказка" id="103"/>
+					</RadioButtonField>
+					<RadioButtonField name="КурсВалютыЗагружаетсяИзИнтернета" id="129">
+						<DataPath>1000001/0:a620b26b-d007-4f9a-9044-65b64deb4771</DataPath>
+						<TitleLocation>None</TitleLocation>
+						<RadioButtonType>Auto</RadioButtonType>
+						<ColumnsCount>1</ColumnsCount>
+						<ChoiceList>
+							<xr:Item>
+								<xr:Presentation/>
+								<xr:CheckState>0</xr:CheckState>
+								<xr:Value xsi:type="FormChoiceListDesTimeValue">
+									<Presentation>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>загружается из Интернета</v8:content>
+										</v8:item>
+									</Presentation>
+									<Value xsi:type="xr:DesignTimeRef">Enum.СпособыУстановкиКурсаВалюты.EnumValue.ЗагрузкаИзИнтернета</Value>
+								</xr:Value>
+							</xr:Item>
+						</ChoiceList>
+						<ContextMenu name="КурсВалютыЗагружаетсяИзИнтернетаКонтекстноеМеню" id="130"/>
+						<ExtendedTooltip name="КурсВалютыЗагружаетсяИзИнтернетаРасширеннаяПодсказка" id="131"/>
+					</RadioButtonField>
+					<UsualGroup name="ГруппаКурсСвязанСДругойВалютой" id="138">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Курс связан с другой валютой</v8:content>
+							</v8:item>
+						</Title>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<United>false</United>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ГруппаКурсСвязанСДругойВалютойРасширеннаяПодсказка" id="139"/>
+						<ChildItems>
+							<RadioButtonField name="КурсВалютыСвязанСКурсомДругойВалюты" id="132">
+								<DataPath>1000001/0:a620b26b-d007-4f9a-9044-65b64deb4771</DataPath>
+								<TitleLocation>None</TitleLocation>
+								<RadioButtonType>Auto</RadioButtonType>
+								<ColumnsCount>1</ColumnsCount>
+								<ChoiceList>
+									<xr:Item>
+										<xr:Presentation/>
+										<xr:CheckState>0</xr:CheckState>
+										<xr:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>связан с курсом другой валюты:</v8:content>
+												</v8:item>
+											</Presentation>
+											<Value xsi:type="xr:DesignTimeRef">Enum.СпособыУстановкиКурсаВалюты.EnumValue.НаценкаНаКурсДругойВалюты</Value>
+										</xr:Value>
+									</xr:Item>
+								</ChoiceList>
+								<ContextMenu name="КурсВалютыСвязанСКурсомДругойВалютыКонтекстноеМеню" id="133"/>
+								<ExtendedTooltip name="КурсВалютыСвязанСКурсомДругойВалютыРасширеннаяПодсказка" id="134"/>
+							</RadioButtonField>
+							<UsualGroup name="ГруппаНаценкаНаКурсДругойВалюты" id="119">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Наценка на курс другой валюты</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Коэффициент, который применяется к курсу основной валюты для вычисления курса текущей валюты.</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ToolTipRepresentation>Button</ToolTipRepresentation>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаНаценкаНаКурсДругойВалютыРасширеннаяПодсказка" id="120"/>
+								<ChildItems>
+									<InputField name="ОсновнаяВалюта" id="5">
+										<DataPath>1000001/0:ca0152e1-40cf-480b-af2f-f1bc43b86e3f</DataPath>
+										<TitleLocation>None</TitleLocation>
+										<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+										<Width>15</Width>
+										<HorizontalStretch>false</HorizontalStretch>
+										<Wrap>false</Wrap>
+										<ChooseType>false</ChooseType>
+										<TypeDomainEnabled>false</TypeDomainEnabled>
+										<AvailableTypes>
+											<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+										</AvailableTypes>
+										<BorderColor>style:BorderColor</BorderColor>
+										<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+										<ContextMenu name="ОсновнаяВалютаКонтекстноеМеню" id="35"/>
+										<ExtendedTooltip name="ОсновнаяВалютаExtendedTooltip" id="81"/>
+									</InputField>
+									<InputField name="Наценка" id="6">
+										<DataPath>1000001/0:09e4439d-fb20-4cc0-8d72-f9761d356932</DataPath>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Коэффициент, применяемый к курсу выбранной валюты для вычисления курса текущей валюты</v8:content>
+											</v8:item>
+										</ToolTip>
+										<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+										<Width>7</Width>
+										<Wrap>false</Wrap>
+										<ChoiceButton>false</ChoiceButton>
+										<SpinButton>true</SpinButton>
+										<MinValue xsi:type="xs:decimal">-99</MinValue>
+										<MaxValue xsi:type="xs:decimal">100</MaxValue>
+										<BorderColor>style:BorderColor</BorderColor>
+										<ContextMenu name="НаценкаКонтекстноеМеню" id="36"/>
+										<ExtendedTooltip name="НаценкаExtendedTooltip" id="82"/>
+									</InputField>
+									<LabelDecoration name="ТекстПроцент" id="126">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>%</v8:content>
+											</v8:item>
+										</Title>
+										<ContextMenu name="ТекстПроцентКонтекстноеМеню" id="127"/>
+										<ExtendedTooltip name="ТекстПроцентРасширеннаяПодсказка" id="128"/>
+									</LabelDecoration>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</UsualGroup>
+					<UsualGroup name="ГруппаКурсРассчитываетсяПоФормуле" id="140">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Курс рассчитывается по формуле</v8:content>
+							</v8:item>
+						</Title>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<United>false</United>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ГруппаКурсРассчитываетсяПоФормулеРасширеннаяПодсказка" id="141"/>
+						<ChildItems>
+							<RadioButtonField name="КурсВалютыРассчитываетсяПоФормуле" id="135">
+								<DataPath>1000001/0:a620b26b-d007-4f9a-9044-65b64deb4771</DataPath>
+								<TitleLocation>None</TitleLocation>
+								<RadioButtonType>Auto</RadioButtonType>
+								<ColumnsCount>1</ColumnsCount>
+								<ChoiceList>
+									<xr:Item>
+										<xr:Presentation/>
+										<xr:CheckState>0</xr:CheckState>
+										<xr:Value xsi:type="FormChoiceListDesTimeValue">
+											<Presentation>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>рассчитывается по формуле:</v8:content>
+												</v8:item>
+											</Presentation>
+											<Value xsi:type="xr:DesignTimeRef">Enum.СпособыУстановкиКурсаВалюты.EnumValue.РасчетПоФормуле</Value>
+										</xr:Value>
+									</xr:Item>
+								</ChoiceList>
+								<ContextMenu name="КурсВалютыРассчитываетсяПоФормулеКонтекстноеМеню" id="136"/>
+								<ExtendedTooltip name="КурсВалютыРассчитываетсяПоФормулеРасширеннаяПодсказка" id="137"/>
+							</RadioButtonField>
+							<InputField name="ФормулаРасчетаКурса" id="121">
+								<DataPath>1000001/0:ca609d5e-0a56-42ba-b9c1-74d079b066fd</DataPath>
+								<TitleLocation>None</TitleLocation>
+								<ToolTipRepresentation>Button</ToolTipRepresentation>
+								<Width>32</Width>
+								<HorizontalStretch>false</HorizontalStretch>
+								<ContextMenu name="ФормулаРасчетаКурсаКонтекстноеМеню" id="122"/>
+								<ExtendedTooltip name="ФормулаРасчетаКурсаРасширеннаяПодсказка" id="123"/>
+							</InputField>
+						</ChildItems>
+					</UsualGroup>
+				</ChildItems>
+			</UsualGroup>
+			<LabelDecoration name="ПараметрыПрописиВалюты" id="145">
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Параметры прописи валюты</v8:content>
+					</v8:item>
+				</Title>
+				<Hyperlink>true</Hyperlink>
+				<ContextMenu name="ПараметрыПрописиВалютыКонтекстноеМеню" id="146"/>
+				<ExtendedTooltip name="ПараметрыПрописиВалютыРасширеннаяПодсказка" id="147"/>
+			</LabelDecoration>
+		</ChildItems>
+		<Attributes>
+			<Attribute name="Объект" id="1000001">
+				<Type>
+					<v8:Type>cfg:CatalogObject.Валюты</v8:Type>
+				</Type>
+				<MainAttribute>true</MainAttribute>
+				<SavedData>true</SavedData>
+			</Attribute>
+		</Attributes>
+	</BaseForm>
+</Form>
