@@ -65,6 +65,7 @@
 			<CommonModule>БНБ_РаботаСКурсамиВалют</CommonModule>
 			<Catalog>Валюты</Catalog>
 			<Enum>СпособыУстановкиКурсаВалюты</Enum>
+			<DataProcessor>ЗагрузкаКурсовВалют</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
