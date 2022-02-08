@@ -89,6 +89,13 @@
 						<Event name="OnChange" callType="Before">БНБ_ВалютаКотируетсяКЛевуПриИзмененииПеред</Event>
 					</Events>
 				</CheckBoxField>
+				<CheckBoxField name="БНБ_ЗагружатьАвтоматически" id="155">
+					<DataPath>Объект.БНБ_ЗагружатьАвтоматически</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="БНБ_ЗагружатьАвтоматическиКонтекстноеМеню" id="156"/>
+					<ExtendedTooltip name="БНБ_ЗагружатьАвтоматическиРасширеннаяПодсказка" id="157"/>
+				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаСпособУстановкиКурса" id="106">
