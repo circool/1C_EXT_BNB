@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
-	<DataProcessor uuid="cf9e3e79-f464-4e6d-b993-e09cc8d66a27">
+	<DataProcessor uuid="bca3f924-535a-4857-aa3a-26af88178657">
 		<InternalInfo>
 			<xr:GeneratedType name="DataProcessorObject.ЗагрузкаКурсовВалют" category="Object">
-				<xr:TypeId>3250e7d0-9bb3-4344-8fa9-02c4241cb044</xr:TypeId>
-				<xr:ValueId>c62e5120-fc74-4c63-ba48-89b19030bb4f</xr:ValueId>
+				<xr:TypeId>bd05a478-2f93-4ef6-8f07-7facf91cf4df</xr:TypeId>
+				<xr:ValueId>26e2eb60-db1b-4456-b523-f3291f6f8c43</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DataProcessorManager.ЗагрузкаКурсовВалют" category="Manager">
-				<xr:TypeId>ab65f604-66f3-4661-848e-8e93efcf15f8</xr:TypeId>
-				<xr:ValueId>6690a3ac-fab2-44f0-ad13-a4ae5d10a931</xr:ValueId>
+				<xr:TypeId>cbb2a753-d413-4ae3-9cea-6305a96a9648</xr:TypeId>
+				<xr:ValueId>66756b51-0d94-4c8b-92e9-4762463c3972</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>

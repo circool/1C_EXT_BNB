@@ -1,23 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
-	<CommonModule uuid="16771699-e9a7-4b05-b400-0dead61a9553">
+	<ScheduledJob uuid="c5a7db7c-7285-40dd-916c-769d2fd667f8">
+		<InternalInfo/>
 		<Properties>
-			<Name>БНБ_РаботаСКурсамиВалют</Name>
-			<Synonym>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>БНБ работа с курсами валют</v8:content>
-				</v8:item>
-			</Synonym>
-			<Comment>Содержит подпрограммы и функции используемые для получения курса валют с сайба Народного банка Болгарии</Comment>
-			<Global>false</Global>
-			<ClientManagedApplication>false</ClientManagedApplication>
-			<Server>true</Server>
-			<ExternalConnection>false</ExternalConnection>
-			<ClientOrdinaryApplication>false</ClientOrdinaryApplication>
-			<ServerCall>false</ServerCall>
-			<Privileged>false</Privileged>
-			<ReturnValuesReuse>DontUse</ReturnValuesReuse>
+			<Name>ЗагрузкаКурсовВалют</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>c7ffd8ab-15e9-4cf1-a7fd-d05534dff000</ExtendedConfigurationObject>
 		</Properties>
-	</CommonModule>
+	</ScheduledJob>
 </MetaDataObject>

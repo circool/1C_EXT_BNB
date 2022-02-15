@@ -90,7 +90,7 @@
 					</Events>
 				</CheckBoxField>
 				<CheckBoxField name="БНБ_ЗагружатьАвтоматически" id="155">
-					<DataPath>Объект.БНБ_ЗагружатьАвтоматически</DataPath>
+					<DataPath>Объект.БНБ_ОбновлятьАвтоматически</DataPath>
 					<TitleLocation>Right</TitleLocation>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="БНБ_ЗагружатьАвтоматическиКонтекстноеМеню" id="156"/>

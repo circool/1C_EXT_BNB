@@ -1,25 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.13">
 	<ConfigVersions>
-		<Metadata name="Catalog.Валюты" id="8ec40ed4-e3d1-48de-9a31-f9e32a8b4616" configVersion="238b5477c107d92b21f58f12c8dc11b7f3af7327">
+		<Metadata name="Catalog.Валюты" id="8ec40ed4-e3d1-48de-9a31-f9e32a8b4616" configVersion="db85e0382ecc6a67f2083430297671069c9ff14c">
 			<Metadata name="Catalog.Валюты.Attribute.БНБ_КотироватьКБолгарскомуЛеву" id="3f6387d4-faa0-492a-b424-fb999b7c64d4"/>
 			<Metadata name="Catalog.Валюты.Attribute.СпособУстановкиКурса" id="449032dd-6a91-4e2a-bd66-b4a9a28d4d97"/>
-			<Metadata name="Catalog.Валюты.Attribute.БНБ_ЗагружатьАвтоматически" id="63e1781d-adb0-40b3-8d51-cd70f14c2a4f"/>
+			<Metadata name="Catalog.Валюты.Attribute.БНБ_ОбновлятьАвтоматически" id="63e1781d-adb0-40b3-8d51-cd70f14c2a4f"/>
 		</Metadata>
 		<Metadata name="Catalog.Валюты.Form.ФормаЭлемента" id="48fc5066-eec2-4a3d-b858-67662f460fa4" configVersion="dd571eebab5ff585121317c9e3ca20bc07285727"/>
 		<Metadata name="Catalog.Валюты.Form.ФормаЭлемента.Form" id="48fc5066-eec2-4a3d-b858-67662f460fa4.0" configVersion="591b7bf07ee734e2af2daa4e7b3a0526348883a7"/>
-		<Metadata name="CommonModule.БНБ_РаботаСКурсамиВалют" id="16771699-e9a7-4b05-b400-0dead61a9553" configVersion="b4b4838502885ac376d42cbc8d2908b6db683232"/>
-		<Metadata name="CommonModule.БНБ_РаботаСКурсамиВалют.Module" id="16771699-e9a7-4b05-b400-0dead61a9553.0" configVersion="240f8095e7016bc2de685bf117c5250ad1bea6e9"/>
-		<Metadata name="Configuration.БНБ" id="5f057f02-10b1-40eb-bed0-b0f7c71dfd3a" configVersion="7b757e18c8b1fce377f4e081c0610d3c119e870d"/>
-		<Metadata name="DataProcessor.ЗагрузкаКурсовВалют" id="cf9e3e79-f464-4e6d-b993-e09cc8d66a27" configVersion="62bbf92b62fdcc7389db7288531e13d2b1f50461"/>
-		<Metadata name="DataProcessor.ЗагрузкаКурсовВалют.Form.Форма" id="6da4ae4c-6f1f-4170-a235-fcaf2a118ddc" configVersion="cc8fe7f0559d6403c2341f28aa4277c27c2ab359"/>
-		<Metadata name="DataProcessor.ЗагрузкаКурсовВалют.Form.Форма.Form" id="6da4ae4c-6f1f-4170-a235-fcaf2a118ddc.0" configVersion="efd53cf0c9098489b7b3b8ae2afedd57381270f3"/>
+		<Metadata name="CommonModule.РаботаСКурсамиВалют" id="6a053dae-07f3-4813-80b8-44a4ffed0e40" configVersion="2b8868f0a4fc68b84174d4465567d391874d9b09"/>
+		<Metadata name="CommonModule.РаботаСКурсамиВалют.Module" id="6a053dae-07f3-4813-80b8-44a4ffed0e40.0" configVersion="7392050206a3281bb5a03c5d5a2b6864ec2615f5"/>
+		<Metadata name="Configuration.БНБ" id="5f057f02-10b1-40eb-bed0-b0f7c71dfd3a" configVersion="c2caf60178e066af55ed9f0a53a89f7ddde3618e"/>
+		<Metadata name="DataProcessor.ЗагрузкаКурсовВалют" id="bca3f924-535a-4857-aa3a-26af88178657" configVersion="28468bc0f327f028189c102b5a500f41a5aa9611"/>
+		<Metadata name="DataProcessor.ЗагрузкаКурсовВалют.Form.Форма" id="cb0bab15-19e3-4895-a9e8-8be17d5a36a6" configVersion="36ef72b03d080bcc4240ee4c10c268964b47aaff"/>
+		<Metadata name="DataProcessor.ЗагрузкаКурсовВалют.Form.Форма.Form" id="cb0bab15-19e3-4895-a9e8-8be17d5a36a6.0" configVersion="06d13274c04792f2502595e8de1ac5f2b30bbe1a"/>
 		<Metadata name="Enum.СпособыУстановкиКурсаВалюты" id="e67697d2-ca01-458e-8c08-ec51d3cb8099" configVersion="bcde2633c7aa9f06465da5107b9f0bdbd11bc70f">
 			<Metadata name="Enum.СпособыУстановкиКурсаВалюты.EnumValue.НаценкаНаКурсДругойВалюты" id="2a658b54-e337-4043-91c7-5d82d01ebb1a"/>
 			<Metadata name="Enum.СпособыУстановкиКурсаВалюты.EnumValue.ЗагрузкаИзИнтернета" id="453a399c-55df-4df4-ad04-49bfb1e6f272"/>
 			<Metadata name="Enum.СпособыУстановкиКурсаВалюты.EnumValue.РучнойВвод" id="addd7ae0-5541-450e-9733-3d26ef742578"/>
 			<Metadata name="Enum.СпособыУстановкиКурсаВалюты.EnumValue.РасчетПоФормуле" id="ed5e8ceb-1ba2-4646-a4bb-fe9b2d0e4f50"/>
 		</Metadata>
+		<Metadata name="InformationRegister.КурсыВалют" id="4e8471a1-3a51-4316-813a-bcd026218c87" configVersion="f04cd0b1a30d1164a4d5628f430544ae4f1feeb0">
+			<Metadata name="InformationRegister.КурсыВалют.Dimension.Валюта" id="241528a9-2a21-42f6-a71d-6ff4de6540d1"/>
+		</Metadata>
 		<Metadata name="Language.Русский" id="17f2d637-fe8b-4587-9da4-dd1373260d65" configVersion="94526c95de4ca0636b8d9c62617653cca79052bc"/>
+		<Metadata name="ScheduledJob.ЗагрузкаКурсовВалют" id="c5a7db7c-7285-40dd-916c-769d2fd667f8" configVersion="d7e4fa179b23772181662b3dbb4387188f843a9c"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

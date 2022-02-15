@@ -88,21 +88,26 @@
 			</Attribute>
 			<Attribute uuid="63e1781d-adb0-40b3-8d51-cd70f14c2a4f">
 				<Properties>
-					<Name>БНБ_ЗагружатьАвтоматически</Name>
+					<Name>БНБ_ОбновлятьАвтоматически</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Загружать автоматически</v8:content>
+							<v8:content>Обновлять курс автоматически</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>При установке этого реквизита, курс этой валюты будет автоматически обновлятся</Comment>
+					<Comment>При установке этого реквизита, курс этой валюты будет автоматически обновлятся при выполнении регламентного задания  "Загрузка курсов валют"</Comment>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
 					<EditFormat/>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отметьте для автоматического обновления  курсов для этой валюты.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
 					<Mask/>
 					<MultiLine>false</MultiLine>
