@@ -8,13 +8,13 @@
 		</Metadata>
 		<Metadata name="Catalog.Валюты.Form.ФормаЭлемента" id="48fc5066-eec2-4a3d-b858-67662f460fa4" configVersion="dd571eebab5ff585121317c9e3ca20bc07285727"/>
 		<Metadata name="Catalog.Валюты.Form.ФормаЭлемента.Form" id="48fc5066-eec2-4a3d-b858-67662f460fa4.0" configVersion="12f2fe0965bae56ac6113749283457c036fad3fd"/>
-		<Metadata name="CommonModule.РаботаСКурсамиВалют" id="6a053dae-07f3-4813-80b8-44a4ffed0e40" configVersion="9a1f1775d9f2baf1f3333500517e6eb8d1c60022"/>
-		<Metadata name="CommonModule.РаботаСКурсамиВалют.Module" id="6a053dae-07f3-4813-80b8-44a4ffed0e40.0" configVersion="e2aa0009d4f60398cc0a352bea5411154fd34f73"/>
-		<Metadata name="Configuration.БНБ" id="5f057f02-10b1-40eb-bed0-b0f7c71dfd3a" configVersion="50619203c5f6dc6a83249e35d43bb75aad108046"/>
+		<Metadata name="CommonModule.РаботаСКурсамиВалют" id="6a053dae-07f3-4813-80b8-44a4ffed0e40" configVersion="2b8868f0a4fc68b84174d4465567d391874d9b09"/>
+		<Metadata name="CommonModule.РаботаСКурсамиВалют.Module" id="6a053dae-07f3-4813-80b8-44a4ffed0e40.0" configVersion="651dfaf196dcfc127736cf991654086c91eecde0"/>
+		<Metadata name="Configuration.БНБ" id="5f057f02-10b1-40eb-bed0-b0f7c71dfd3a" configVersion="a9ce6e155de0dadfe94bdbe9285a4ee18955aab4"/>
 		<Metadata name="DataProcessor.ЗагрузкаКурсовВалют" id="bca3f924-535a-4857-aa3a-26af88178657" configVersion="a437eab1699971d792835b40cc968fff47498a29"/>
-		<Metadata name="DataProcessor.ЗагрузкаКурсовВалют.Form.Форма" id="cb0bab15-19e3-4895-a9e8-8be17d5a36a6" configVersion="36ef72b03d080bcc4240ee4c10c268964b47aaff"/>
-		<Metadata name="DataProcessor.ЗагрузкаКурсовВалют.Form.Форма.Form" id="cb0bab15-19e3-4895-a9e8-8be17d5a36a6.0" configVersion="ffa06402c7399f4e8d2763b53429dabd3e621786"/>
-		<Metadata name="DataProcessor.ЗагрузкаКурсовВалют.ManagerModule" id="bca3f924-535a-4857-aa3a-26af88178657.2" configVersion="4a5443791c2b8a1b0088010835621d30e91faa4e"/>
+		<Metadata name="DataProcessor.ЗагрузкаКурсовВалют.Form.Форма" id="cb0bab15-19e3-4895-a9e8-8be17d5a36a6" configVersion="04e037eadc8e1cb157d5e9743d80138fb827b7a9"/>
+		<Metadata name="DataProcessor.ЗагрузкаКурсовВалют.Form.Форма.Form" id="cb0bab15-19e3-4895-a9e8-8be17d5a36a6.0" configVersion="9125cc583c5dc88714d9563ce72464c66a399908"/>
+		<Metadata name="DataProcessor.ЗагрузкаКурсовВалют.ManagerModule" id="bca3f924-535a-4857-aa3a-26af88178657.2" configVersion="1143486b68ed52cb7878d4b97ec47b12c883a229"/>
 		<Metadata name="Enum.СпособыУстановкиКурсаВалюты" id="e67697d2-ca01-458e-8c08-ec51d3cb8099" configVersion="bcde2633c7aa9f06465da5107b9f0bdbd11bc70f">
 			<Metadata name="Enum.СпособыУстановкиКурсаВалюты.EnumValue.НаценкаНаКурсДругойВалюты" id="2a658b54-e337-4043-91c7-5d82d01ebb1a"/>
 			<Metadata name="Enum.СпособыУстановкиКурсаВалюты.EnumValue.ЗагрузкаИзИнтернета" id="453a399c-55df-4df4-ad04-49bfb1e6f272"/>
